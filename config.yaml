@@ -1,4 +1,4 @@
-baseURL: https://ch02-03.hugoinaction.com     # Hosting location.
+baseURL: https://ch02-04.hugoinaction.com     # Hosting location.
 languageCode: en-us                           # Locale
 title: Acme Corporation                       # Name of the website
 theme: Eclectic                               # Name of the theme

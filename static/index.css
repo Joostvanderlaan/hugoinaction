@@ -1,0 +1,294 @@
+/**
+ * Not meant as a reference for good CSS practices. The goal of Hugo in Action
+ * is for us to understand Hugo. The HTML/CSS code has been intentionally
+ * made complicated so that we can simplify the Go HTML Template pieces of Hugo. * There are intentional cases where CSS selectors are used instead of class
+ * parameters for targetting. Many of the targeting done in CSS is more
+ * specific than it should be. Some of the decisions taken are sub-optimal.
+ * You are free to use this code on your website but beware of caveats and
+ * do understand that support may be lacking where expected.
+ **/
+
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  line-height: 1.5;
+  background: url(image/background.svg) 0 0/cover;
+  min-height: 100vh;
+  width: 100vw
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: inherit;
+  line-height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 1em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace
+}
+
+h1,
+h2,
+p {
+  margin: 0
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb
+}
+
+img {
+  border-style: solid;
+  max-width: 100%;
+  height: auto
+}
+
+h1,
+h2 {
+  font-size: inherit;
+  font-weight: inherit
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit
+}
+
+img,
+svg {
+  display: block;
+  vertical-align: middle
+}
+
+@media (min-width:640px) {
+  body {
+    max-width: 640px
+  }
+}
+
+@media (min-width:768px) {
+  body {
+    max-width: 768px
+  }
+}
+
+@media (min-width:1024px) {
+  body {
+    max-width: 1024px
+  }
+}
+
+@media (min-width:1280px) {
+  body {
+    max-width: 1280px
+  }
+}
+
+@media (min-width:1536px) {
+  body {
+    max-width: 1536px
+  }
+}
+
+.home section:first-of-type:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.home section:first-of-type:last-of-type main {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding: 2rem
+}
+
+.home section:first-of-type:last-of-type img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 3rem
+}
+
+@media (min-width:640px) {
+  .home section:first-of-type:last-of-type img {
+    width: 3.5rem
+  }
+}
+
+@media (min-width:768px) {
+  .home section:first-of-type:last-of-type img {
+    width: 4rem
+  }
+}
+
+.home section:first-of-type:last-of-type h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem
+}
+
+@media (min-width:640px) {
+  .home section:first-of-type:last-of-type h1 {
+    font-size: 3rem;
+    line-height: 1
+  }
+}
+
+@media (min-width:768px) {
+  .home section:first-of-type:last-of-type h1 {
+    font-size: 3.75rem;
+    line-height: 1
+  }
+}
+
+@media (min-width:1024px) {
+  .home section:first-of-type:last-of-type h1 {
+    font-size: 4.5rem;
+    line-height: 1
+  }
+}
+
+.home section:first-of-type:last-of-type h2 {
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity))
+}
+
+@media (min-width:1024px) {
+  .home section:first-of-type:last-of-type h2 {
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+}
+
+.home section:first-of-type:last-of-type a {
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  border-radius: .75rem;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: .5rem 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  text-decoration: none
+}
+
+.home section:first-of-type:last-of-type a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  text-decoration: none
+}
+
+.home section:first-of-type:last-of-type a:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 transparent);
+  --tw-ring-offset-width: 4px;
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(79, 70, 229, var(--tw-ring-opacity))
+}
+
+@media (min-width:768px) {
+  .home section:first-of-type:last-of-type a {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding: .75rem 1.25rem
+  }
+}
+
+@media (min-width:1024px) {
+  .home section:first-of-type:last-of-type a {
+    padding: 1rem 1.5rem
+  }
+}
+
+.home footer a {
+  display: inline-block;
+  flex-grow: 0;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 1rem;
+  padding: .75rem;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity))
+}
+
+.home footer a:hover {
+  --tw-text-opacity: 1;
+  color: rgba(79, 70, 229, var(--tw-text-opacity));
+  text-decoration: underline
+}
+
+.home footer a:focus {
+  --tw-text-opacity: 1;
+  color: rgba(79, 70, 229, var(--tw-text-opacity))
+}
+
+@media (min-width:640px) {
+  .home footer a {
+    padding: .5rem
+  }
+}
+
+@media (min-width:1024px) {
+  .home footer a {
+    font-size: .875rem;
+    line-height: 1.25rem
+  }
+}
+
+.home footer {
+  text-align: center;
+  vertical-align: bottom
+}
+
+.border {
+  border-width: 1px
+}
+
+* {
+  --tw-shadow: 0 0 transparent;
+  --tw-ring-inset: var(--tw-empty,
+      /*!*/
+      /*!*/
+    );
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 transparent;
+  --tw-ring-shadow: 0 0 transparent
+}
