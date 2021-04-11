@@ -1,0 +1,3 @@
+baseURL: https://ch02-01.hugoinaction.com     # Hosting location.
+languageCode: en-us
+title: My New Hugo Site
